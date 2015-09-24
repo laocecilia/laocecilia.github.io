@@ -1,7 +1,7 @@
 $(function(){
 	
 	var note = $('#note'),
-		ts = new Date(2012, 0, 1),
+		ts = new Date(2015, 10, 23),
 		newYear = true;
 	
 	if((new Date()) > ts){
@@ -23,7 +23,7 @@ $(function(){
 			message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
 			
 			if(newYear){
-				message += "left until the new year!";
+				message += "until we're reunited <3";
 			}
 			else {
 				message += "left to 10 days from now!";
