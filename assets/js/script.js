@@ -26,7 +26,7 @@ $(function(){
 				message += "until we're reunited <3";
 			}
 			else {
-				message += "left to 10 days from now!";
+				message += "what day is it?";
 			}
 			
 			note.html(message);
