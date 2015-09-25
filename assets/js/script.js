@@ -1,14 +1,10 @@
 $(function(){
 	
 	var note = $('#note'),
-		ts = new Date(2015, 10, 23),
-		newYear = true;
+		ts = new Date(2015, 9, 23),
 	
 	if((new Date()) > ts){
-		// The new year is here! Count towards something else.
-		// Notice the *1000 at the end - time must be in milliseconds
-		ts = (new Date()).getTime() + 10*24*60*60*1000;
-		newYear = false;
+		ts = 0;
 	}
 		
 	$('#countdown').countdown({
@@ -22,12 +18,7 @@ $(function(){
 			message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
 			message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
 			
-			if(newYear){
-				message += "until we're reunited <3";
-			}
-			else {
-				message += "what day is it?";
-			}
+			message += "until we're reunited <3";
 			
 			note.html(message);
 		}
