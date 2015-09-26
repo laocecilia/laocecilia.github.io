@@ -1,7 +1,7 @@
 $(function(){
 	
 	var note = $('#note'),
-		ts = new Date(2015, 9, 23),
+		ts = new Date(2015, 9, 23);
 	
 	if((new Date()) > ts){
 		ts = 0;
